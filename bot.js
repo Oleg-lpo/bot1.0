@@ -12,7 +12,7 @@ const bot = new Bot(process.env.BOT_API_KEY);
 const Filedata = "./jsonFile/data.json";
 const Resetday = "./jsonFile/saveData.json";
 
-
+//Используются два плагина для полного функционирования бота
 bot.use(hydrate()); 
 bot.use(session({
     initial: () => ({step: 0}) // Прописываю шаги для дальших дейсвий бота
